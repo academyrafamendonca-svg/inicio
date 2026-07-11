@@ -499,7 +499,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
 </head>
 <body>
 
-<a class="topbar" href="https://pay.hotmart.com/E92405248J?checkoutMode=2&off=t93pbl0a" target="_blank" rel="noopener">
+<a class="topbar" href="https://manicureperfeita.online/" target="_blank" rel="noopener">
   <span class="tb-pill">Novo</span>
   <span class="tb-text">Curso Manicure Perfeita Online por apenas <strong>17€</strong> — acesso imediato</span>
   <span class="tb-cta">Garantir agora <span class="arr">→</span></span>
@@ -643,7 +643,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
           <span class="price-tag">Apenas <strong>17€</strong></span>
           <span class="price-note">Acesso imediato</span>
         </div>
-        <a class="btn" href="https://pay.hotmart.com/E92405248J?checkoutMode=2&off=t93pbl0a" target="_blank" rel="noopener">Quero o curso por 17€ <span class="arr">→</span></a>
+        <a class="btn" href="https://manicureperfeita.online/" target="_blank" rel="noopener">Quero o curso por 17€ <span class="arr">→</span></a>
       </div>
       <div class="online-photo">
         <img loading="lazy" decoding="async" src="online.jpg" alt="Rafa Mendonça em gravação de aulas">
@@ -788,7 +788,7 @@ document.addEventListener('click', function(e){
   var a = e.target.closest('a');
   if(!a || typeof fbq==='undefined') return;
   var href = a.getAttribute('href') || '';
-  if(href.indexOf('pay.hotmart.com') > -1){
+  if(href.indexOf('pay.hotmart.com') > -1 || href.indexOf('manicureperfeita.online') > -1){
     fbq('track','InitiateCheckout',{content_name:'Curso Manicure Perfeita Online',value:17,currency:'EUR'});
   } else if(href.indexOf('wa.me') > -1){
     fbq('track','Lead',{content_name:'Contacto WhatsApp'});
