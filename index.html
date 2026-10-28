@@ -366,6 +366,26 @@ header{
   .sobre-photos{max-width:420px;margin:0 auto}
 }
 
+/* ---------- próxima turma ---------- */
+.curso-next{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  border-top:1px solid var(--line);padding-top:16px;margin:0 0 20px!important;color:var(--muted);font-size:.8rem;
+  text-transform:uppercase;letter-spacing:.14em}
+.curso-next strong{color:var(--text);font-size:1rem;letter-spacing:0;text-transform:none}
+
+/* ---------- mentoria advance ---------- */
+.mentoria{padding:84px 0;border-top:1px solid var(--line)}
+.mentoria-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.mentoria h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin:14px 0 20px}
+.mentoria h2 .red{color:var(--red)}
+.mentoria p{color:var(--muted);max-width:52ch;margin-bottom:28px}
+.mentoria ol{list-style:none;counter-reset:m;display:grid;gap:14px}
+.mentoria ol li{counter-increment:m;display:flex;gap:16px;align-items:baseline;padding:18px 20px;
+  border:1px solid var(--line);border-radius:16px}
+.mentoria ol li::before{content:counter(m);font-weight:800;color:var(--red);min-width:1ch}
+.mentoria ol li strong{display:block;margin-bottom:2px}
+.mentoria ol li span{color:var(--muted);font-size:.92rem}
+@media(max-width:900px){.mentoria-grid{grid-template-columns:1fr;gap:40px}}
+
 /* ---------- cta final ---------- */
 .final{
   padding:100px 0;position:relative;overflow:hidden;
@@ -540,7 +560,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
       <div class="hero-proof">
         <div><strong>16</strong><span>anos como manicure profissional</span></div>
         <div><strong>6</strong><span>anos como instrutora</span></div>
-        <div><strong>+100</strong><span>profissionais formados</span></div>
+        <div><strong>+137</strong><span>alunas formadas</span></div>
         <div><strong>+5 mil</strong><span>clientes atendidas</span></div>
       </div>
     </div>
@@ -577,6 +597,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
             <li>Esmaltação em gel impecável</li>
             <li>Preparação e finalização profissional</li>
           </ul>
+          <p class="curso-next"><span>Próxima turma</span><strong>02/11 · 147 €</strong></p>
           <a class="btn btn-red" href="/manicure-perfeita-presencial/">Quero este curso <span class="arr">→</span></a>
         </div>
       </article>
@@ -593,6 +614,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
             <li>Estudos da curvatura e ponto de tensão</li>
             <li>Formatos: quadrado, bailarina, almond e stiletto</li>
           </ul>
+          <p class="curso-next"><span>Próxima turma</span><strong>16/11 · 197 €</strong></p>
           <a class="btn btn-red" href="/molde-f1-gel/">Quero este curso <span class="arr">→</span></a>
         </div>
       </article>
@@ -609,6 +631,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
             <li>Lixamento manual e com micromotor</li>
             <li>Manutenção e durabilidade profissional</li>
           </ul>
+          <p class="curso-next"><span>Próxima turma</span><strong>30/11 · 197 €</strong></p>
           <a class="btn btn-red" href="/molde-f1-acrilico/">Quero este curso <span class="arr">→</span></a>
         </div>
       </article>
@@ -625,7 +648,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
     <div class="reveal">
       <span class="label">Experiência intensiva</span>
       <h2>Imersão Presencial em Lisboa</h2>
-      <p>Um dia intensivo ao lado da Rafa, no atelier em Lisboa: técnica, prática supervisionada e mentoria com profissionais que estão a construir o mesmo caminho que você.</p>
+      <p>Um dia intensivo ao lado da Rafa, no atelier em Lisboa: técnica, prática supervisionada e mentoria com profissionais que estão a construir o mesmo caminho.</p>
       <ul>
         <li>Turmas reduzidas com acompanhamento individual</li>
         <li>Demonstração ao vivo e prática supervisionada</li>
@@ -640,7 +663,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
   <div class="wrap">
     <div class="online-card reveal">
       <div class="online-content">
-        <span class="label">Onde você estiver</span>
+        <span class="label">Onde quer que esteja</span>
         <h2>Curso Manicure Perfeita Online</h2>
         <p>A versão online do curso presencial: aulas gravadas e passo a passo em detalhe, para aprender ao seu ritmo — mesmo com a agenda cheia, entre trabalho e família.</p>
         <div class="price-row">
@@ -663,9 +686,9 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
       <img loading="lazy" decoding="async" class="main" src="sobre.jpg" alt="Rafa Mendonça">
     </div>
     <div class="reveal">
-      <span class="label">Quem vai te formar</span>
+      <span class="label">Quem a vai formar</span>
       <h2>De Foz do Iguaçu para Lisboa. Da sala de casa para um atelier de unhas reconhecido.</h2>
-      <p>A Rafa começou a fazer unhas aos 13 anos, sem curso e sem recursos. 16 anos depois, construiu um dos ateliers de referência de Lisboa e já formou mais de 100 profissionais presencialmente — sempre com o mesmo objetivo: independência financeira através da manicure.</p>
+      <p>A Rafa começou a fazer unhas aos 13 anos, sem curso e sem recursos. 16 anos depois, construiu um dos ateliers de referência de Lisboa e já formou mais de 137 alunas presencialmente — sempre com o mesmo objetivo: independência financeira através da manicure.</p>
       <div class="quote">
         <p>“Não espere as condições perfeitas para começar.”</p>
         <small>Rafa Mendonça · Instrutora Master · Especialista em Molde F1</small>
@@ -724,13 +747,31 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
   </div>
 </section>
 
+<section class="mentoria" id="mentoria">
+  <div class="wrap mentoria-grid">
+    <div class="reveal">
+      <span class="label">Depois do curso</span>
+      <h2>A técnica é o primeiro passo. <span class="red">Agora, aprenda a viver disso.</span></h2>
+      <p>Saber fazer não chega para encher a agenda nem para pagar as contas. Na Mentoria Advance, a Rafa e o Jonas acompanham-na de perto para transformar a técnica num negócio que dá lucro.</p>
+      <div class="final-cta">
+        <a class="btn btn-red" href="https://hubadvance.pt/" target="_blank" rel="noopener">Conhecer a Mentoria Advance <span class="arr">→</span></a>
+      </div>
+    </div>
+    <ol class="reveal">
+      <li><div><strong>Preço que dá lucro</strong><span>Saber quanto ganha em cada atendimento e cobrar o que vale.</span></div></li>
+      <li><div><strong>Agenda organizada</strong><span>Horários definidos, pausas protegidas, sem encaixes de última hora.</span></div></li>
+      <li><div><strong>Clientes que voltam</strong><span>Uma cliente que volta vale mais do que três novas.</span></div></li>
+    </ol>
+  </div>
+</section>
+
 <section class="final" id="contacto">
   <div class="wrap">
     <div class="final-grid reveal">
       <div>
         <span class="label">Inscrições abertas</span>
         <h2>A sua carreira na manicure <span class="red">começa aqui.</span></h2>
-        <p>Mais de 100 profissionais já deram este passo. Fala connosco para saber datas, valores e condições dos próximos cursos e da imersão presencial em Lisboa.</p>
+        <p>Mais de 137 alunas já deram este passo. Fale connosco para tirar dúvidas sobre os próximos cursos e a imersão presencial em Lisboa.</p>
         <div class="final-cta">
           <a class="btn btn-wa" href="https://wa.me/351961867113" target="_blank" rel="noopener">Falar no WhatsApp <span class="arr">→</span></a>
           <a class="btn btn-ghost" href="https://www.instagram.com/rafamendoncanails" target="_blank" rel="noopener">Seguir no Instagram</a>
@@ -767,6 +808,7 @@ src="https://www.facebook.com/tr?id=27849605534652662&ev=PageView&noscript=1"
       <nav class="foot-col" aria-label="Academy">
         <h4>Academy</h4>
         <a href="#sobre">Sobre a Rafa</a>
+        <a href="#mentoria">Mentoria Advance</a>
         <a href="#contacto">Contactos</a>
         <a href="https://www.instagram.com/academyrafamendonca" target="_blank" rel="noopener">Instagram</a>
       </nav>
